@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste dos Doshas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #444;
+        }
+        .question-block {
+            margin-bottom: 20px;
+        }
+        .question {
+            margin-bottom: 10px;
+        }
+        input[type="number"] {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Teste dos Doshas</h1>
+
+    <div>
+        <p>
+            O dosha Vata é responsável pelos movimentos no corpo, influenciando funções como respiração, circulação, e o transporte de alimentos e sinais nervosos. O dosha Pitta, por sua vez, regula o metabolismo e a digestão, ajudando a processar alimentos, ar e água. Já o dosha Kapha é fundamental para a estrutura física, mantendo a coesão das células e formando músculos, gordura, ossos e tecidos conjuntivos.
+        </p>
+        <p>
+            Cada célula do corpo precisa desses três princípios para garantir a vitalidade e a saúde. O equilíbrio entre Vata, Pitta e Kapha é essencial para o funcionamento harmonioso do organismo.
+        </p>
+        <p>
+            Este teste está dividido em três seções, cada uma relacionada a um dos doshas. Para cada afirmação, atribua uma pontuação de 0, 1 ou 2, dependendo da medida em que se aplica a você:
+            <ul>
+                <li>0 = Não se aplica</li>
+                <li>1 = Aplica-se parcialmente (ou às vezes)</li>
+                <li>2 = Aplica-se amplamente (ou quase sempre)</li>
+            </ul>
+        </p>
+        <p>
+            No final de cada seção, some os pontos para obter um total. Por exemplo, se você marcar 0 na primeira afirmação, 2 na segunda e 1 na terceira, seu total até esse ponto será 0 + 2 + 1 = 3.
+        </p>
+        <p>
+            Ao concluir o teste, você terá três totais diferentes, representando cada dosha. Para traços mais objetivos, a identificação será clara. Para aspectos comportamentais e mentais, que são mais subjetivos, baseie suas respostas em como você se sentiu e agiu predominantemente ao longo da vida, ou pelo menos nos últimos anos.
+        </p>
+    </div>
+
+    <form id="dosha-form">
+        <!-- DOSHA VATA -->
+        <h2>DOSHA VATA</h2>
+        <div class="question-block">
+            <div class="question">1. Executo rapidamente as atividades. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">2. Não sou bom em memorizar as coisas e depois lembrá-las mais tarde. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">3. Sou animado e vivo por natureza. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">4. Sou magro – não engordo com facilidade. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">5. Sempre aprendi coisas novas com muita facilidade. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">6. Meu andar característico é leve e rápido. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">7. Costumo ter dificuldade em tomar decisões. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">8. Tenho tendência a ter gases e prisão de ventre. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">9. Tenho tendência a ter mãos e pés frios. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">10. Fico ansioso ou preocupado com frequência. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">11. Não tolero tão bem o frio quanto a maioria das pessoas. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">12. Falo rápido e meus amigos acham que eu falo muito. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">13. Minha disposição de ânimo muda com facilidade e sou emotivo por natureza. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">14. Frequentemente tenho dificuldade em dormir ou em ter uma noite de sono reparador. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">15. Minha pele tende a ser muito seca, especialmente no inverno. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">16. Minha mente é muito ativa, às vezes inquieta, mas também muito imaginativa. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">17. Meus movimentos são rápidos e ativos; minha energia tende a se manifestar em surtos. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">18. Fico facilmente agitado. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">19. Tenho tendência a ter hábitos alimentares e de sono irregulares. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">20. Aprendo rápido, mas também esqueço rápido. <input type="number" min="0" max="2" class="vata-question" required></div>
+            <div class="question">CONTAGEM TOTAL VATA: <input type="text" id="total-vata" readonly></div>
+        </div>
+
+        <!-- DOSHA PITTA -->
+        <h2>DOSHA PITTA</h2>
+        <div class="question-block">
+            <div class="question">1. Eu me considero uma pessoa muito eficiente. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">2. Costumo ser extremamente preciso e organizado nas minhas atividades. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">3. Tenho a mente decidida e resoluta e sou enérgico. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">4. Minha tendência natural é ser competitivo. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">5. Eu sou muito crítico de mim mesmo e dos outros. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">6. Frequentemente me sinto frustrado ou irritado quando as coisas não saem como planejei. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">7. Eu tenho uma personalidade forte e sou muitas vezes dominante. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">8. Tenho uma digestão forte e posso comer porções grandes. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">9. Tenho uma tendência a sentir calor e suar muito. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">10. Eu tenho uma boa capacidade de concentração e foco. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">11. Minha pele tende a ser oleosa e sensível. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">12. Eu tenho uma forte vontade de liderar e tomar decisões. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">13. Eu tenho uma tendência a ser impaciente e frustrado com lentidão. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">14. Eu me estresso facilmente e posso ter uma atitude crítica. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">15. Minha mente está frequentemente ocupada e agitada. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">16. Eu tenho uma forte motivação para alcançar meus objetivos. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">17. Eu tenho uma tendência a sentir raiva ou frustração com facilidade. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">18. Eu sou muito autocrítico e frequentemente me julgo severamente. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">19. Eu tenho uma forte tendência a ser competitivo. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">20. Eu sou muito focado em atingir minhas metas e objetivos. <input type="number" min="0" max="2" class="pitta-question" required></div>
+            <div class="question">CONTAGEM TOTAL PITTA: <input type="text" id="total-pitta" readonly></div>
+        </div>
+
+        <!-- DOSHA KAPHA -->
+        <h2>DOSHA KAPHA</h2>
+        <div class="question-block">
+            <div class="question">1. Eu tenho uma constituição robusta e forte. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">2. Eu me sinto mais confortável em um ritmo lento e relaxado. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">3. Eu tenho tendência a ganhar peso facilmente. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">4. Eu tenho uma pele suave e hidratada. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">5. Eu tenho uma boa resistência e recuperação de doenças. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">6. Eu geralmente tenho um bom apetite e gosto de comer. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">7. Eu me sinto calmo e centrado, mesmo em situações estressantes. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">8. Eu tenho uma tendência a ficar entediado facilmente e preciso de novos estímulos. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">9. Eu geralmente tenho uma voz suave e calmante. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">10. Eu me sinto mais confortável em um ambiente quente e seco. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">11. Eu me recupero lentamente de lesões ou doenças. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">12. Eu sou leal e constante nas minhas relações. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">13. Eu tenho uma tendência a ser preguiçoso e procrastinador. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">14. Eu prefiro estar em casa do que em ambientes movimentados. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">15. Eu sou calmo e paciente, mesmo quando outras pessoas estão estressadas. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">16. Eu tenho uma tendência a sentir-se letárgico, especialmente em dias frios e úmidos. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">17. Eu me sinto relaxado e contente com a rotina diária. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">18. Eu geralmente tenho um sistema imunológico forte e raramente fico doente. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">19. Eu gosto de atividades físicas suaves e relaxantes, como caminhadas. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">20. Eu prefiro um estilo de vida mais estável e previsível. <input type="number" min="0" max="2" class="kapha-question" required></div>
+            <div class="question">CONTAGEM TOTAL KAPHA: <input type="text" id="total-kapha" readonly></div>
+        </div>
+
+<div class="comment-section">
+    <h2>Perguntas Adicionais</h2>
+    <div class="question">
+        <label for="diet">1. Dieta atual: Detalhes sobre a alimentação dela, incluindo o que ela costuma comer, horários das refeições, e preferências alimentares.</label>
+        <textarea id="diet" name="diet" maxlength="500"></textarea>
+    </div>
+    <div class="question">
+        <label for="daily-routine">2. Rotina diária: Saber sobre os hábitos diários dela, como horários de sono, nível de atividade física, e tempo gasto ao ar livre.</label>
+        <textarea id="daily-routine" name="daily-routine" maxlength="500"></textarea>
+    </div>
+    <div class="question">
+        <label for="specific-symptoms">3. Sintomas específicos: Além da anemia e dificuldade de absorção de ferro, é importante saber se há outros sintomas, como cansaço, palidez, dificuldades digestivas, ou outros problemas de saúde.</label>
+        <textarea id="specific-symptoms" name="specific-symptoms" maxlength="500"></textarea>
+    </div>
+    <div class="question">
+        <label for="health-history">4. Histórico de saúde: Informações sobre a saúde dela desde o nascimento, como doenças passadas, vacinas, e tratamentos médicos anteriores.</label>
+        <textarea id="health-history" name="health-history" maxlength="500"></textarea>
+    </div>
+</div>
+
+        <button type="submit">Calcular Doshas</button>
+        <button type="button" onclick="saveFormData()">Salvar Dados</button>
+    </form>
+
+    <script>
+        document.getElementById('dosha-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            function calculateTotal(className) {
+                const inputs = document.querySelectorAll(`.${className}`);
+                let total = 0;
+                inputs.forEach(input => {
+                    total += parseInt(input.value) || 0;
+                });
+                return total;
+            }
+
+            const totalVata = calculateTotal('vata-question');
+            const totalPitta = calculateTotal('pitta-question');
+            const totalKapha = calculateTotal('kapha-question');
+
+            document.getElementById('total-vata').value = totalVata;
+            document.getElementById('total-pitta').value = totalPitta;
+            document.getElementById('total-kapha').value = totalKapha;
+        });
+    </script>
+
+
+    <script>
+        document.getElementById('dosha-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            function calculateTotal(className) {
+                const inputs = document.querySelectorAll(`.${className}`);
+                let total = 0;
+                inputs.forEach(input => {
+                    total += parseInt(input.value) || 0;
+                });
+                return total;
+            }
+
+            const totalVata = calculateTotal('vata-question');
+            const totalPitta = calculateTotal('pitta-question');
+            const totalKapha = calculateTotal('kapha-question');
+
+            document.getElementById('total-vata').value = totalVata;
+            document.getElementById('total-pitta').value = totalPitta;
+            document.getElementById('total-kapha').value = totalKapha;
+        });
+
+        function saveFormData() {
+            // Coleta os dados dos totais de doshas
+            const vataTotal = document.getElementById('total-vata').value;
+            const pittaTotal = document.getElementById('total-pitta').value;
+            const kaphaTotal = document.getElementById('total-kapha').value;
+
+            // Coleta os dados dos comentários adicionais
+            const diet = document.getElementById('diet').value;
+            const dailyRoutine = document.getElementById('daily-routine').value;
+            const specificSymptoms = document.getElementById('specific-symptoms').value;
+            const healthHistory = document.getElementById('health-history').value;
+
+            // Monta o conteúdo para o arquivo de texto
+            let data = `Resultado do Questionário de Doshas:\n\n`;
+            data += `Total Vata: ${vataTotal}\n`;
+            data += `Total Pitta: ${pittaTotal}\n`;
+            data += `Total Kapha: ${kaphaTotal}\n\n`;
+
+            data += `Comentários Adicionais:\n\n`;
+            data += `1. Dieta atual:\n${diet}\n\n`;
+            data += `2. Rotina diária:\n${dailyRoutine}\n\n`;
+            data += `3. Sintomas específicos:\n${specificSymptoms}\n\n`;
+            data += `4. Histórico de saúde:\n${healthHistory}\n`;
+
+            // Criação do arquivo Blob e download
+            const blob = new Blob([data], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'resultado_completo_doshas.txt';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    </script>
+
+</body>
+</html>
+
